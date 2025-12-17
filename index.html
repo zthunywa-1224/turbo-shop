@@ -1,210 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shoprite – Fresh Groceries Online</title>
+  <meta charset="UTF-8" />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-
-    <style>
-        /* make the logo a perfect circle */
-        .logo-wrapper {
-            width: 60px;               /* size of the circle */
-            height: 60px;
-            border-radius: 50%;
-            overflow: hidden;          /* hide any part of the image that spills out */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .logo-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;         /* fill the circle without stretching */
-        }
-    </style>
-
-    <!-- Custom styles -->
-    <link href="assets/css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+  <header class="text-center py-4">
+    <h1>About Our Fast Food</h1>
+  </header>
 
-<!-- Header -->
-<header class="bg-primary text-white py-2">
-    <div class="container d-flex justify-content-between align-items-center">
-        <a href="index.html" title="btn" class="logo-link text-white text-decoration-none fs-4">
-            <div class="logo-wrapper">
-                <img src="assets/img/fruits-1.jpg" class="logo-img" alt="Shoprite Logo">
-            </div>
-        </a>
-        <div class="navbar-icons">
-            <a href="search.html" title="Search" class="text-white me-3"><i class="bi bi-search"></i></a>
-            <a href="cart.html"   title="Cart"    class="text-white me-3"><i class="bi bi-cart"></i></a>
-            <a href="login.html"  title="Account" class="text-white"><i class="bi bi-person"></i></a>
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <i class="bi bi-code"></i> Ntsikelelo
+      </a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navLinks"
+              aria-controls="navLinks"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about-us.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Order</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        </ul>
+      </div>
     </div>
-</header>
+  </nav>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-        <button title="btn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
-                <li class="nav-item"><a class="nav-link" href="order.html">Order</a></li>
-                <li class="nav-item"><a class="nav-link" href="search.html">Search</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+  <main class="container my-5">
+    <section>
+      <p>Welcome to our fast‑food restaurant! We are passionate about serving fresh, delicious, and affordable meals to our community. Our goal is to make every customer happy with quality food and friendly service.</p>
+      <p>Founded with love for good food, we believe in fast service without compromising taste and hygiene.</p>
 
-<!-- Hero Carousel -->
-<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="assets/img/fruits-3.jpg" class="d-block w-100" alt="Fresh Fruit">
-            <div class="carousel-caption bg-dark bg-opacity-50 fs-6">
-                <h5>Fresh Produce Every Day</h5>
-                <p>Hand‑picked fruits & veg at unbeatable prices</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="assets/img/barbeque-grill.jpg" class="d-block w-100" alt="Meat">
-            <div class="carousel-caption bg-dark bg-opacity-50 fs-6">
-                <h5>Quality Meats</h5>
-                <p>From farm to table, delivered to you</p>
-            </div>
-        </div>
-    </div>
-    <button title="btn" class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button title="btn" class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-    </button>
-</div>
+      <!-- New content about the local café -->
+      <p>Our little café, tucked away on the corner of Main Street, has been a neighborhood favorite for over a decade. We source beans from local roasters and bake pastries fresh every morning, so you always get that home‑grown flavor you love.</p>
+    </section>
+  </main>
 
-<!-- Featured Categories -->
-<section class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center mb-4">Shop by Category</h2>
-        <div class="row row-cols-2 row-cols-md-4 g-3">
-            <div class="col">
-                <a href="category-fruits.html" class="text-decoration-none">
-                    <div class="card text-center">
-                        <img src="assets/img/fruits-2.jpg" class="card-img-top" alt="Fruits">
-                        <div class="card-body">
-                            <h6>Fruits</h6>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="category-vegetables.html" class="text-decoration-none">
-                    <div class="card text-center">
-                        <img src="assets/img/vegetable-3.jpeg" class="card-img-top" alt="Vegetables">
-                        <div class="card-body">
-                            <h6>Vegetables</h6>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="category-meat.html" class="text-decoration-none">
-                    <div class="card text-center">
-                        <img src="assets/img/braai-meat-1.jpg" class="card-img-top" alt="Meat">
-                        <div class="card-body">
-                            <h6>Meat & Poultry</h6>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="category-dairy.html" class="text-decoration-none">
-                    <div class="card text-center">
-                        <img src="assets/img/dairy-3.jpg" class="card-img-top" alt="Dairy">
-                        <div class="card-body">
-                            <h6>Dairy</h6>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Featured Products -->
-<section class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Featured Products</h2>
-        <div class="row row-cols-1 row-cols-md-3 g-4" id="productGrid">
-            <!-- Product cards will be generated here -->
-        </div>
-    </div>
-</section>
-
-<!-- Newsletter -->
-<section class="bg-primary text-white py-5">
+  <!-- Footer -->
+  <footer class="bg-light py-3">
     <div class="container text-center">
-        <h3>Save on Groceries!</h3>
-        <p>Subscribe for weekly deals and recipes.</p>
-        <form class="row justify-content-center">
-            <div class="col-auto">
-                <input type="email" class="form-control" placeholder="Your email">
-            </div>
-            <div class="col-auto">
-                <button type="submit" class="btn btn-light text-primary">Subscribe</button>
-            </div>
-        </form>
+      <small>&copy; 2025 Coffee Shop • <a href="refund-cancellation.html" class="bg-primary rounded-3 py-1 px-2 text-light my-2 mx-4">Refund & Cancellation</a></small>
+      <p>For more info contact us at: <a href="mailto:kamvaandme@gmail.com">SupportWeb .co</a></p>
     </div>
-</section>
+  </footer>
 
-<!-- Footer -->
-<footer class="bg-dark text-white py-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 text-center text-md-start">
-                <h5>Shoprite</h5>
-                <p>Your neighbourhood grocery hub.</p>
-            </div>
-            <div class="col-md-4 text-center text-md-start">
-                <h5>Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="shop.html" class="text-white">Shop</a></li>
-                    <li><a href="categories.html" class="text-white">Categories</a></li>
-                    <li><a href="about.html" class="text-white">About</a></li>
-                    <li><a href="contact.html" class="text-white">Contact</a></li>
-                </ul>
-            </div>
-            <div class="col-md-4 text-center text-md-start">
-                <h5>Contact</h5>
-                <p>Email: info@shoprite.co.za</p>
-                <p>Phone: +27 21 123 4567</p>
-            </div>
-        </div>
-        <div class="text-center mt-3">
-            <small>&copy; 2025 Shoprite. All rights reserved.</small>
-        </div>
-    </div>
-</footer>
-
-<!-- Bootstrap JS bundle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Custom scripts -->
-<script src="assets/js/main.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
